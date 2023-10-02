@@ -11,7 +11,6 @@ import Content from './Content';
 import FooterInfo from './FooterInfo';
 import AddressInfo from './AddressInfo';
 
-// setnav(listNav)
 const Pic = styled.div`
       width: 100%;
       height: 750px;
@@ -58,7 +57,6 @@ const Layout = ({ src }) => {
 
   const [nav, setnav] = useState(listNav)
 
-  // console.log(nav)
   return (
     <>
       <Pic src={src} >
