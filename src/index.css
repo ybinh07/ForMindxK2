@@ -84,7 +84,6 @@ code {
 
 .start-button:hover::before {
   opacity: 1;
-
 }
 
 .content-container {
@@ -94,19 +93,17 @@ code {
   background-color: #fff;
   border-radius: 5px;
   margin-bottom: 100px;
-}
-
-.content:hover {
-  animation: movingContent .5s 1 linear;
-  animation-fill-mode: forwards;
+  transition: height 2s;
 }
 
 .content {
-  width: 25%;
   text-align: center;
   margin-top: 40px;
+  transition: margin-top .4s;
 }
-
+.content:hover {
+  margin-top: 25px;
+}
 .see-more {
   background: linear-gradient(90deg, #ee0979, #ff6a00);
   background-clip: text;
@@ -117,11 +114,22 @@ code {
   text-decoration: none
 }
 
+
+.line-see-more{
+  width: 75px;
+  height: 1px;
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
+  margin: auto;
+  animation: progressBar .5s 1 linear;
+  animation-fill-mode: forwards;
+}
+
 .container-info-footer {
   width: 100%;
   background-color: #070d13;
   height: 350px;
   padding-top: 2%;
+  flex-wrap: wrap !important;
 }
 
 .brand-footer {
@@ -136,7 +144,7 @@ code {
   color: #fff;
   align-items: end;
   margin-left: 20px;
-  flex-wrap: wrap;
+  
 }
 
 .info-footer {
@@ -145,13 +153,14 @@ code {
   display: flex;
   flex-direction: column;
   position: relative;
-
 }
-
+#info{
+  padding-left: 0px;
+  transition: padding .5s, color .5s 
+}
 #info:hover {
- 
-  animation: movingInfoFooter .3s 1 linear;
-  animation-fill-mode: forwards;
+  padding-left: 7px;
+  color: #ee0979;
 }
 .line::after{
   content:"";
@@ -159,14 +168,9 @@ code {
   position: absolute;
   bottom: 147px;
   left: 0;
-  height: 1.5px;
+  height: 2px;
   width: 18%;
   border-radius: 3px;
-}
-@keyframes movingContent {
-  to {
-    transform: translateY(-20px);
-  }
 }
 
 @keyframes appearSeeMore {
@@ -181,9 +185,14 @@ code {
   }
 }
 
-@keyframes movingInfoFooter{
-  to {
-    color: #ee0979;
-    padding-left: 7px;
+@keyframes progressBar{
+  0%{
+    width: 0px;
+    transform: translateX(-37px);
   }
+  100%{
+    width: 75px;;
+  }
+  
 }
+

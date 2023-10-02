@@ -29,8 +29,7 @@ const FooterInfo = ({title,content1, content2,content3,content4}) => {
     <>
     <div className='info-footer'>
     <H3 className='line'>{title}</H3>
-    <Hr></Hr>
-    
+    <Hr/>
     <TextInfo id='info'>{content1}</TextInfo>
     <TextInfo id='info'>{content2}</TextInfo>
     <TextInfo id='info'>{content3}</TextInfo>

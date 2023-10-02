@@ -44,7 +44,7 @@ const Footer = styled.footer`
   border-top: 1px solid #192129;
 `
 
-const Banner = ({ src }) => {
+const Layout = ({ src }) => {
 
   const listNav = ['Trang chủ', 'Thông tin', 'Hỏi đáp', 'Liên hệ', 'Thành viên']
 
@@ -116,42 +116,44 @@ const Banner = ({ src }) => {
           content='Thông tin giao dịch luôn được mã hóa để giúp dữ liệu của bạn luôn được an toàn, không bị đánh cắp.'
         />
       </div>
+
+      {/* footer */}
       <div className='container-info-footer' >
         <div className='container spacing-footer'>
 
           <div className='brand-footer'>
-            <Icon width='150px' pic='https://whitefoobank.netlify.app/assets/img/whitefoologocap.png'/>
-            <p style={{paddingTop:'20px',fontSize:'15px'}}>Hệ thống ngân hàng xuyên quốc gia đáng tin cậy. 
+            <Icon width='150px' pic='https://whitefoobank.netlify.app/assets/img/whitefoologocap.png' />
+            <p style={{ paddingTop: '20px', fontSize: '15px' }}>Hệ thống ngân hàng xuyên quốc gia đáng tin cậy.
               Dẫn đầu trong danh sách các ngân hàng được người dùng bình chọn
               và được tin dùng bởi hàng triệu người dùng ở hầu hết các quốc gia trên thế giới.</p>
           </div>
-         
 
-            <FooterInfo 
-            title='Giới Thiệu' 
-            content1='Về chúng tôi' 
+          <FooterInfo
+            title='Giới Thiệu'
+            content1='Về chúng tôi'
             content2='Dịch vụ'
-            content3='Tính năng' 
-            content4='Bảng giá'/>
+            content3='Tính năng'
+            content4='Bảng giá' />
 
-            <FooterInfo 
-            title='Hỗ Trợ' 
-            content1='Câu hỏi thường gặp' 
-            content2='Chính sách bảo mật' 
-            content3='Điều khoản sử dụng' 
-            content4='Liên hệ'/>
+          <FooterInfo
+            title='Hỗ Trợ'
+            content1='Câu hỏi thường gặp'
+            content2='Chính sách bảo mật'
+            content3='Điều khoản sử dụng'
+            content4='Liên hệ' />
 
-            <AddressInfo 
+          <AddressInfo
             title='Liên Hệ'
             content1='Địa chỉ:227 Đường Nguyễn Văn Cừ, Phường 4, Quận 5, Hồ Chí Minh'
             content2='Email:admin@whitefoo.com'
-            content3='Phone:(+84) 1234567890'/>
+            content3='Phone:(+84) 1234567890' />
         </div>
       </div>
+
       <Footer>2020 WhiteFoo Corporation - Copyright lololol</Footer>
     </>
 
   )
 }
 
-export default Banner
+export default Layout
