@@ -1,0 +1,7 @@
+.nav-item{
+    color: black;
+    transition: color .3s ;
+  }
+  .nav-item:hover{
+    color: #1677ff ;
+  }

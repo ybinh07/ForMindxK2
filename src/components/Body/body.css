@@ -1,0 +1,49 @@
+
+.container-des{
+    width: 50%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 7px;
+}
+
+
+.settings {
+    margin-top: 40px;
+    width: 50%;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+   font-weight: 500;
+}
+
+.setting-container {
+    padding: 32px;
+}
+.title-pick{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    font-family: Inter;
+    font-style: normal;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+.text-muted{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+}
+.input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+
